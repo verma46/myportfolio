@@ -33,13 +33,13 @@
                 "src/glow.css"
               ],
               "scripts": [
-                "/Users/tanmayverma/myportfolio/node_modules/jquery/dist/jquery.min.js",
-                "/Users/tanmayverma/myportfolio/node_modules/bootstrap/dist/js/bootstrap.min.js",
-                "/Users/tanmayverma/myportfolio/src/index.js",
-                "/Users/tanmayverma/myportfolio/src/script.js",
-                "/Users/tanmayverma/myportfolio/src/darkmode.js",
-                "/Users/tanmayverma/myportfolio/src/float.js",
-                "/Users/tanmayverma/myportfolio/src/introtext.js"
+                "node_modules/jquery/dist/jquery.min.js",
+                "node_modules/bootstrap/dist/js/bootstrap.min.js",
+                "src/index.js",
+                "src/script.js",
+                "src/darkmode.js",
+                "src/float.js",
+                "src/introtext.js"
               ]
           },
           "configurations": {
