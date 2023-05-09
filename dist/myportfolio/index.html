@@ -1,0 +1,441 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myportfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <style type="text/css">@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lujVj9_mf.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lujVj9_mf.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lujVj9_mf.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lujVj9_mf.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lujVj9_mf.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lujVj9_mf.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhdu3cOWxy40.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdu3cOWxy40.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxdu3cOWxy40.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBdu3cOWxy40.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBdu3cOWxy40.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRdu3cOWxy40.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhdu3cOWxy40.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxdu3cOWxy40.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxdu3cOWxy40.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBdu3cOWxy40.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBdu3cOWxy40.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRdu3cOWxy40.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu3cOWxw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmhdu3cOWxy40.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwkxdu3cOWxy40.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmxdu3cOWxy40.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlBdu3cOWxy40.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmBdu3cOWxy40.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmRdu3cOWxy40.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdu3cOWxw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <style>@import"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap";*,*:after,*:before{margin:0;padding:0;box-sizing:inherit;font-family:inherit}html{font-size:62.5%;scroll-behavior:smooth}@media only screen and (max-width: 75em){html{font-size:59%}}@media only screen and (max-width: 56.25em){html{font-size:56%}}@media only screen and (min-width: 112.5em){html{font-size:65%}}body{box-sizing:border-box;position:relative;line-height:1.5;font-family:sans-serif;overflow-x:hidden;overflow-y:scroll;font-family:Source Sans Pro,sans-serif}a{text-decoration:none;color:inherit}li{list-style:none}input:focus,button:focus,a:focus,textarea:focus{outline:none}button{border:none;cursor:pointer}textarea{resize:none}.heading-primary{font-size:6rem;text-transform:uppercase;letter-spacing:3px;text-align:center}@media only screen and (max-width: 37.5em){.heading-primary{font-size:4.5rem}}.heading-sec__mb-bg{margin-bottom:11rem}@media only screen and (max-width: 56.25em){.heading-sec__mb-bg{margin-bottom:8rem}}.heading-sec__mb-med{margin-bottom:9rem}@media only screen and (max-width: 56.25em){.heading-sec__mb-med{margin-bottom:8rem}}.heading-sec__main{display:block;font-size:4rem;text-transform:uppercase;letter-spacing:1px;letter-spacing:3px;text-align:center;margin-bottom:3.5rem;position:relative}.heading-sec__main--lt{color:#fff}.heading-sec__main--lt:after{content:"";background:#fff!important}.heading-sec__main:after{content:"";position:absolute;top:calc(100% + 1.5rem);height:5px;width:3rem;background:#facf0f;left:50%;transform:translate(-50%);border-radius:5px}@media only screen and (max-width: 37.5em){.heading-sec__main:after{top:calc(100% + 1.2rem)}}.heading-sec__sub{display:block;text-align:center;color:#777;font-size:2rem;font-weight:500;max-width:80rem;margin:auto;line-height:1.6}@media only screen and (max-width: 37.5em){.heading-sec__sub{font-size:1.8rem}}.heading-sec__sub--lt{color:#eee}.heading-sm{font-size:2.2rem;text-transform:uppercase;letter-spacing:1px;text-align:center}.main-container{max-width:120rem;margin:auto;width:92%}.btn{background:#fff;color:#333;text-transform:uppercase;letter-spacing:2px;display:inline-block;font-weight:700;border-radius:5px;box-shadow:0 5px 15px #00000026;transition:transform .3s}.btn:hover{transform:translateY(-3px)}.btn--med{padding:1.5rem 5rem;font-size:1.6rem}.btn--theme{background:#facf0f;color:#fff}.sec-pad{padding:12rem 0}@media only screen and (max-width: 56.25em){.sec-pad{padding:8rem 0}}.text-primary{color:#fff;font-size:2.2rem;text-align:center;width:100%;line-height:1.6}@media only screen and (max-width: 37.5em){.text-primary{font-size:2rem}}.d-none{display:none}.home-hero{color:#fff;background:linear-gradient(to right,rgba(250,207,15,.8),rgba(250,207,15,.8)),url(common-bg.3c94fd6e680b2a8b.svg);background-position:center;height:100vh;min-height:80rem;max-height:120rem;position:relative}@media only screen and (max-width: 37.5em){.home-hero{height:unset;min-height:unset}}.home-hero__socials{position:absolute;top:50%;border:2px solid #eee;border-left:2px solid #eee;transform:translateY(-50%)}@media only screen and (max-width: 56.25em){.home-hero__socials{display:none}}.home-hero__mouse-scroll-cont{position:absolute;bottom:3%;left:50%;transform:translate(-50%)}@media only screen and (max-width: 37.5em){.home-hero__mouse-scroll-cont{display:none}}.home-hero__social{width:5rem}.home-hero__social-icon-link{width:100%;display:block;padding:1.2rem;border-bottom:2px solid #eee;transition:background .3s}.home-hero__social-icon-link:hover{background:rgba(255,255,255,.1)}.home-hero__social-icon-link--bd-none{border-bottom:0}.home-hero__social-icon{width:100%}.home-hero__content{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);max-width:90rem;width:92%;text-align:center;margin:3rem auto 0;height:50%}@media only screen and (max-width: 37.5em){.home-hero__content{padding:19rem 0 13rem;margin:auto;position:static;transform:translate(0)}}.home-hero__info{margin:3rem auto 0;max-width:80rem;height:30px;object-fit:contain;text-align:center}@media only screen and (max-width: 37.5em){.home-hero__info{margin:5rem auto 0;max-width:80rem;height:70px;object-fit:contain;text-align:center}}.about{background:#fafafa}.about__content{display:grid;grid-template-columns:1fr 1fr;grid-gap:10rem;text-align:center}@media only screen and (max-width: 56.25em){.about__content{grid-template-columns:1fr;grid-gap:8rem}}.about__content-title{font-weight:700;font-size:2.8rem;margin-bottom:3rem}@media only screen and (max-width: 37.5em){.about__content-title{font-size:2.4rem}}.about__content-details-para{font-size:1.8rem;color:gray;max-width:60rem;line-height:1.7;margin-bottom:1rem;text-align:justify}.about__content-details-para:last-child{margin-bottom:4rem}.projects__row{display:grid;grid-template-columns:1.5fr 1fr;grid-gap:5rem;margin-bottom:11rem}@media only screen and (max-width: 56.25em){.projects__row{grid-template-columns:1fr;grid-gap:2rem;margin-bottom:8rem}}@media only screen and (max-width: 56.25em){.projects__row{text-align:center}}.projects__row:last-child{margin-bottom:0}.projects__row-img-cont{overflow:hidden}.projects__row-img{width:100%;display:block;object-fit:cover}.projects__row-content{padding:2rem 0;display:flex;justify-content:center;flex-direction:column;align-items:flex-start}@media only screen and (max-width: 56.25em){.projects__row-content{align-items:center}}.projects__row-content-title{font-weight:700;font-size:2.8rem;margin-bottom:2rem}@media only screen and (max-width: 37.5em){.projects__row-content-title{font-size:2.4rem}}.projects__row-content-desc{font-size:1.8rem;color:gray;max-width:60rem;line-height:1.7;margin-bottom:3rem;text-align:justify}@media only screen and (max-width: 37.5em){.projects__row-content-desc{font-size:1.7rem}}.contact{background:linear-gradient(to right,rgba(250,207,15,.8),rgba(250,207,15,.8)),url(common-bg.3c94fd6e680b2a8b.svg);background-size:cover;background-position:center}.contact__form-container{box-shadow:0 0 10px #0000001a;background:white;padding:4rem;margin-top:6rem;max-width:80rem;text-align:right;width:95%;border-radius:5px;margin:5rem auto 0}@media only screen and (max-width: 37.5em){.contact__form-container{padding:3rem}}.contact__form-field{margin-bottom:4rem}@media only screen and (max-width: 37.5em){.contact__form-field{margin-bottom:3rem}}.contact__form-label{color:#666;font-size:1.4rem;letter-spacing:1px;font-weight:700;margin-bottom:1rem;display:block;text-align:left}.contact__form-input{color:#333;padding:2rem;width:100%;border:1px solid #ebebeb;font-size:1.6rem;letter-spacing:0px;background:#f0f0f0;border-radius:5px;font-weight:600}.contact__form-input::placeholder{color:#999;font-weight:600;font-size:1.6rem}.contact__form-input::-webkit-input-placeholder{color:#999;font-weight:600;font-size:1.6rem}.contact__form-input:-ms-input-placeholder{color:#999;font-weight:600;font-size:1.6rem}.contact__form-input::-ms-input-placeholder{color:#999;font-weight:600;font-size:1.6rem}.contact__form-input:-moz-placeholder{opacity:1;color:#999;font-weight:600;font-size:1.6rem}.contact__form-input::-moz-placeholder{opacity:1;color:#999;font-weight:600;font-size:1.6rem}.contact__btn{width:30%;padding:2rem 4rem;font-size:1.6rem}@media only screen and (max-width: 37.5em){.contact__btn{width:100%}}.header{position:fixed;width:100%;z-index:1000;background:#fff;box-shadow:0 10px 100px #0000001a}.header__content{display:flex;align-items:center;justify-content:space-between;padding:1rem 5rem}@media only screen and (max-width: 56.25em){.header__content{padding:0 2rem}}.header__logo-container{display:flex;align-items:center;cursor:pointer;color:#333;transition:color .3s}.header__logo-container:hover{color:#facf0f}.header__logo-img-cont{width:5rem;height:5rem;border-radius:50px;overflow:hidden;margin-right:1.5rem;background:#facf0f}@media only screen and (max-width: 56.25em){.header__logo-img-cont{width:4.5rem;height:4.5rem;margin-right:1.2rem}}.header__logo-img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}.header__logo-sub{font-size:1.8rem;text-transform:uppercase;font-weight:700;letter-spacing:1px}.header__links{display:flex}@media only screen and (max-width: 37.5em){.header__links{display:none}}.header__link{padding:2.2rem 3rem;display:inline-block;font-size:1.6rem;color:#333;text-transform:uppercase;letter-spacing:1px;font-weight:700;transition:color .3s}.header__link:hover{color:#facf0f}@media only screen and (max-width: 56.25em){.header__link{padding:3rem 1.8rem;font-size:1.5rem}}.header__main-ham-menu-cont{display:none;width:3rem;padding:2.2rem 0}@media only screen and (max-width: 37.5em){.header__main-ham-menu-cont{display:block}}.header__main-ham-menu,.header__main-ham-menu-close{width:100%}.header__sm-menu{background:#fff;position:absolute;width:100%;top:100%;visibility:hidden;opacity:0;transition:all .3s;box-shadow:0 5px 5px #0000001a;-webkit-box-shadow:0px 5px 5px 0px rgba(0,0,0,.1);-moz-box-shadow:0px 5px 5px 0px rgba(0,0,0,.1)}.header__sm-menu-link a{display:block;text-decoration:none;padding:2.5rem 3rem;font-size:1.6rem;color:#333;border-bottom:1px solid #eee;font-weight:700;text-transform:uppercase;letter-spacing:2px;transition:color .3s;text-align:center}.header__sm-menu-link a:hover{color:#facf0f}.header__sm-menu-link:first-child a{border-top:1px solid #eee}.main-footer{background:#000;color:#fff}.main-footer__upper{display:flex;justify-content:space-between;padding:8rem 0}@media only screen and (max-width: 56.25em){.main-footer__upper{padding:6rem 0}}@media only screen and (max-width: 37.5em){.main-footer__upper{display:block}}.main-footer__row-1{order:2}@media only screen and (max-width: 56.25em){.main-footer__row-1{margin-bottom:5rem}}.main-footer__row-2{width:40%;order:1;max-width:50rem}@media only screen and (max-width: 56.25em){.main-footer__row-2{width:100%}}.main-footer__short-desc{margin-top:2rem;color:#eee;font-size:1.5rem;line-height:1.7;text-align:center}.main-footer__social-cont{margin-top:2rem;text-align:center}.main-footer__icon{margin-right:1rem;width:2.5rem}.main-footer__icon--mr-none{margin-right:0}.main-footer__lower{padding:4rem 0;border-top:1px solid #444;color:#eee;font-size:1.2rem;text-align:left;text-align:center}.main-footer__lower a{text-decoration:underline;font-weight:700;margin-left:2px}@media only screen and (max-width: 56.25em){.main-footer__lower{padding:3.5rem 0}}.skills{display:flex;flex-wrap:wrap}.skills__skill{padding:1rem 2rem;margin-bottom:1.5rem;margin-right:1.5rem;font-size:1.6rem;border-radius:5px;font-weight:600;color:#777}.skills__skill img{width:15%;aspect-ratio:3/2;object-fit:contain;margin-right:10px;margin-bottom:10px}.skills__skill img:hover{transform:scale(1.5)}.about__content-skills{text-align:center}.mouse{width:25px;height:40px;border:2px solid #eee;border-radius:60px;position:relative;overflow:hidden}.mouse:before{content:"";width:5px;height:5px;position:absolute;top:7px;left:50%;transform:translate(-50%);background-color:#eee;border-radius:50%;opacity:1;animation:wheel 1.3s infinite;-webkit-animation:wheel 1.3s infinite}@keyframes wheel{to{opacity:0;top:27px}}.header__link-wrapper{align-self:center}*{padding:0;margin:0}.float{display:none}.float{position:fixed;width:40px;height:40px;bottom:10px;right:30px;background-color:#facf0f;color:#fff;border-radius:50px;text-align:center;box-shadow:2px 2px 3px #999}.my-float{margin-top:10px;font-size:20px}@media only screen and (max-width: 37.5em){#my-darkfloat{margin-top:10px;font-size:20px}}@media only screen and (max-width: 37.5em){.darkcheckbox-label{position:fixed;width:40px;height:40px;bottom:10px;left:30px;background-color:#facf0f;color:#fff;border-radius:50px;text-align:center;box-shadow:2px 2px 3px #999}}*{box-sizing:border-box}.checkbox{opacity:0;position:absolute}.checkbox-label{background-color:#000;width:50px;height:26px;border-radius:50px;position:relative;padding:5px;cursor:pointer;display:flex;justify-content:space-between;align-items:center}.fa-moon-o{color:#f1c40f;font-size:15px}.fa-sun-o{color:#f39c12;font-size:15px}.checkbox-label .ball{background-color:#fff;width:22px;height:22px;position:absolute;left:2px;top:2px;border-radius:50%;transition:transform .2s linear}.checkbox:checked+.checkbox-label .ball{transform:translate(24px)}.fa-bolt{font-size:0px}@media only screen and (max-width: 37.5em){.fa-bolt{color:#fff;font-size:20px}}.fa-arrow-left,.fa-arrow-right{color:#f6f6f6;font-size:18px}.typed{font-size:60px;font-weight:700;color:#fff;padding:10px;display:inline-block;width:auto;height:auto}*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}.slideshow{display:flex;align-items:center;justify-content:center}.wrapper{display:flex;max-width:100%;position:relative}.wrapper i{top:50%;height:44px;width:44px;color:#343f4f;cursor:pointer;font-size:1.15rem;position:absolute;text-align:center;line-height:44px;background:#fff;border-radius:50%;transform:translateY(-50%);transition:transform .1s linear}.wrapper i:active{transform:translateY(-50%) scale(.9)}.wrapper i:hover{background:#f2f2f2}.wrapper i:first-child{left:-22px;display:none}.wrapper i:last-child{right:-22px}.wrapper .carousel{font-size:0px;cursor:pointer;overflow:hidden;white-space:nowrap;scroll-behavior:smooth}.carousel img{height:340px;object-fit:cover;transition:transform .5s;-webkit-user-select:none;user-select:none;margin-left:14px;width:calc(100% / 3)}.carousel img:first-child{margin-left:0}@media screen and (max-width: 900px){.carousel img{width:50%}}@media screen and (max-width: 550px){.carousel img{width:100%}}.text{color:#f2f2f2;font-size:15px;padding:8px 12px;position:absolute;bottom:8px;width:100%;text-align:center}.carousel img:hover{transform:scale(1.5)}.glow{position:relative;display:inline-block;padding:1px 2px;border:2px solid transparent}.glow:before{content:"";position:absolute;inset:-5px;z-index:-1;border-radius:5px;border:1px solid transparent;transition:all .3s ease-in-out}.glow:hover:before{border-color:#fb0000;box-shadow:0 0 15px #fb0000;animation:glow 1s linear infinite}@keyframes glow{0%{border-color:#fb0000}16.7%{border-color:#fff}50%{border-color:#fb0000}66.7%{border-color:#fff}to{border-color:#fb0000}}.glowheader{position:relative;display:inline-block;padding:1px;border:2px solid transparent}.glowheader:before{content:"";position:absolute;inset:-5px;z-index:-1;border-radius:5px;border:1px solid transparent;transition:all .3s ease-in-out}.glowheader:hover:before{border-color:#facf0f;box-shadow:0 0 10px #facf0f;animation:glow 1s linear infinite}</style><link rel="stylesheet" href="styles.7ccf660e93a158b3.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.7ccf660e93a158b3.css"></noscript></head>
+<body>
+
+<!-- Header Section Starts -->
+  
+<header class="header">
+  <div class="header__content">
+    <div class="header__logo-container">
+      <div class="header__logo-img-cont">
+        <img src="./assets/png/tanmaybg.png" alt="Logo Image" class="header__logo-img">
+      </div>
+      <span class="header__logo-sub">Tanmay Verma</span>
+    </div>
+    <div class="header__main">
+      <ul class="header__links">
+        <li class="header__link-wrapper glowheader">
+          <a href="./index.html#home-hero" class="header__link"> Home </a>
+        </li>
+        <li class="header__link-wrapper glowheader">
+          <a href="./index.html#about" class="header__link">About </a>
+        </li>
+        <li class="header__link-wrapper glowheader">
+          <a href="./index.html#projects" class="header__link">
+            Projects
+          </a>
+        </li>
+        <li class="header__link-wrapper glowheader">
+          <a href="./index.html#contact" class="header__link"> Contact </a>
+        </li>
+        <li class="header__link-wrapper glowheader">
+          <a href="./index.html#achievement" class="header__link"> Achievements </a>
+        </li>
+        <li class="header__link-wrapper glow">
+          <a aria-label="Tanmay's Resume" class="header__link" href="./assets/Tanmay Verma April 2023.pdf" target="_blank"> Resume </a>
+        </li>  
+
+        <li class="header__link-wrapper glowheader">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="checkbox-label">
+            <!-- <i class="fas fa-moon"></i> -->
+            <!-- <i class="fas fa-sun"></i> -->
+            <i class="fa fa-moon-o"></i>
+            <i class="fa fa-sun-o"></i>
+            <!-- <i class="fa fa-bolt"></i>
+            <i class="fa fa-flash"></i> -->
+            <span class="ball"></span>
+          </label>
+        </li>
+
+
+      </ul>
+      <div class="header__main-ham-menu-cont">
+        <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu">
+        <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none">
+      </div>
+    </div>
+  </div>
+  <div class="header__sm-menu">
+    <div class="header__sm-menu-content">
+      <ul class="header__sm-menu-links">
+
+        <li class="header__sm-menu-link">
+          <a href="./index.html#home-hero"> Home </a>
+        </li>
+
+        <li class="header__sm-menu-link">
+          <a href="./index.html#about"> About </a>
+        </li>
+
+        <li class="header__sm-menu-link">
+          <a href="./index.html#projects"> Projects </a>
+        </li>
+
+        <li class="header__sm-menu-link">
+          <a href="./index.html#contact"> Contact </a>
+        </li>
+
+        <li class="header__sm-menu-link">
+          <a href="./index.html#achievement"> Achievements </a>
+        </li>
+
+        <li class="header__sm-menu-link">
+          <a aria-label="Tanmay's Resume" class="header__link" href="./assets/Tanmay Verma April 2023.pdf" target="_blank"> Resume </a>
+        </li>
+         
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- Header Section Ends -->
+
+  <!-- Home Section Starts -->
+  
+  <section class="home-hero" id="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary"><strong>Hey,</strong> My name is Tanmay Verma</h1>
+      <div class="home-hero__info">
+        <p class="text-primary">
+          Curious to know about who I am? Let me tell you!
+        </p>
+      </div>
+      <div class="home-hero__info">
+        <p class="text-primary">I am a</p>
+        <span class="typed" data-typed-items="Designer, Developer, Specialist, Traveller, Foodie "></span>
+      </div>
+      <!-- <div class="home-hero__cta">
+        <a href="./#about" class="btn btn--bg">See More</a>
+      </div> -->
+    </div>
+    <div class="home-hero__socials">
+      <div class="home-hero__social">
+        <a href="https://www.linkedin.com/in/tanmayverma199724/" class="home-hero__social-icon-link">
+          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon">
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://github.com/verma46" class="home-hero__social-icon-link">
+          <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon">
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://twitter.com/tanmay199724" class="home-hero__social-icon-link">
+          <img src="./assets/png/twitter-ico.png" alt="icon" class="home-hero__social-icon">
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://instagram.com/tanmay_verma24?igshid=YmMyMTA2M2Y=" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
+          <img src="./assets/png/insta-ico.png" alt="icon" class="home-hero__social-icon">
+        </a>
+      </div>
+    </div>
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- Home Section Ends -->
+
+  <!-- About Section Starts -->
+
+  <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+          Hear ye, hear ye, all you Muggles and Mudbloods! I may not have a wand that shoots fireballs, but I sure can code circles around any wizard at Hogwarts.   
+        </span>
+        <span class="heading-sec__sub">
+          😉🪄🧙🏻‍♂️🦉📚🧹⚡️🕰️💫🌟🌌🏰
+        </span>
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Get to know me!</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+            Howdy! I'm <strong>Tanmay Verma</strong> 👋🏻 🧑🏻‍💻, a retail integration pro with almost 3 years of experience working 
+            with big names like <strong>Heineken, Nestle, and Mars</strong>. I'm a tech wizard, proficient in Java, HTML5, CSS3, 
+            PostgreSQL, and MongoDB. In my last job at <strong>Infosys Ltd.</strong>, I rocked it with B2B projects and designing a 
+            killer GPS mapping system for <strong>Heineken's Digital Order Tracking App</strong>. 
+          </p>
+            <p class="about__content-details-para">
+            Plus, I'm a Master of Applied 
+            Computing student 👨🏻‍🎓 💻 at the <strong>University of Windsor</strong>, where I'm working on some cool stuff like face 
+            recognition algorithms and real estate web search engines. You can check out my projects below.
+            </p>
+            <p class="about__content-details-para">
+              I'm also a bit of a travel junkie and photography enthusiast 📸 ✈️ 🚡 🌍 🚗. Over the years, I've explored hundreds of destinations and tried out various experiences in different countries and cultures, which has also allowed me to use countless number of new technologies around the world and I'm always eager to discover more. 
+            </p>
+            <p class="about__content-details-para">
+              Feel free to connect with me to swap travel stories and tech ideas 🏖️ 🌄 🌅 🌇 🏞️ 🎥 !
+            </p>
+            <p class="about__content-details-para">
+              And checkout my Achievements &amp; Activity Gallery below.👇🏻
+            </p>
+          </div>
+          <a href="./index.html#achievement" class="btn btn--med btn--theme dynamicBgClr">Achievements &amp; Activities</a>
+        </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">My Skills</h3>
+          <div class="skills">
+            <!-- <div class="skills__skill">HTML</div> -->
+            <div class="skills__skill">
+              <img src="./assets/technicalskills/css.svg" title="CSS3">
+              <img src="./assets/technicalskills/html.svg" title="HTML5">
+              <img src="./assets/technicalskills/javascript.svg" title="Javasript">
+              <img src="./assets/technicalskills/angular.svg" title="Angular">
+              <img src="./assets/technicalskills/bootstrap.svg" title="Bootstrap">
+              <img src="./assets/technicalskills/java.svg" title="Java">
+              <img src="./assets/technicalskills/python.svg" title="Python">
+              <img src="./assets/technicalskills/dart.svg" title="Dart">
+              <img src="./assets/technicalskills/figma.svg" title="Figma">
+              <img src="./assets/technicalskills/adobexd.svg" title="Adobe XD">
+              <img src="./assets/technicalskills/postgresql.svg" title="PostgreSQL">
+              <img src="./assets/technicalskills/mongodb.svg" title="MongoDB">
+              <img src="./assets/technicalskills/mysql.svg" title="MySQL">
+              <img src="./assets/technicalskills/flutter.svg" title="Flutter">
+              <img src="./assets/technicalskills/opencv.svg" title="Open CV">
+              <img src="./assets/technicalskills/tensorflow.svg" title="Tensorflow">
+              <img src="./assets/technicalskills/postman.svg" title="Postman">
+              <img src="./assets/technicalskills/servicenow.svg" title="Service Now">
+              <img src="./assets/technicalskills/git.svg" title="Git">
+              <img src="./assets/technicalskills/jira.svg" title="Jira">             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section Ends -->
+
+  <!-- Project Section Starts -->
+
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
+        <span class="heading-sec__sub">
+          Welcome to the playground of my mind - where ideas come to life and projects get their wings!
+        </span>
+      </h2>
+
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/jpeg/facerecognition.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Unlocking the Potential of Face Recognition in OpenCV</h3>
+            <p class="projects__row-content-desc">
+              This research project was focused on evaluating and proposing the optimal face recognition algorithm using the OpenCV library. The project compared conventional and deep learning models, such as Eigenfaces, Fisherfaces, LBPH, MTCNN, and VGG16. Additionally, the project analyzed precision in identifying facial landmarks using machine learning models like Haar Cascades and deep learning libraries like TensorFlow and Keras.
+            </p>
+            <p class="projects__row-content-desc">
+              Additionally, the project featured a unique aspect where the user's face could be matched with a dataset of celebrity faces, and the results were compared using various algorithms to determine the most accurate one.
+            </p>
+            <p class="projects__row-content-desc">
+              This project was rewarded as the Best Innovative Research Award at the 8th CS Demo Day conducted by the School of Computer Science UWindsor.
+            </p>
+            <h3 class="projects__row-content-title">Tools &amp; Technologies Used</h3>
+            <div class="skills__skill">
+              <img src="./assets/technicalskills/python.svg" title="Python">
+              <img src="./assets/technicalskills/opencv.svg" title="Open CV">
+              <img src="./assets/technicalskills/tensorflow.svg" title="Tensorflow">
+              <img src="./assets/technicalskills/Keras.svg" title="Keras">
+              <img src="./assets/technicalskills/visualstudiocode.svg" title="Visual Studio Code"> 
+            </div>
+            <!-- <h3 class="projects__row-content-title">Source Code</h3> -->
+            <!-- <a href="./project-1.html" class="skills__skill">
+              <img src="./assets/technicalskills/github.svg" title="Github"/>
+            </a> -->
+            <a href="https://github.com/verma46/Conventional-Facial-Recognition-Systems.git" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Repository Link</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/jpeg/sdmmockup.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Smart Device Management</h3>
+            <p class="projects__row-content-desc">
+              The "Smart Device Management" mobile app is an innovative solution developed to monitor registered smart devices with real-time usage statistics and malfunction alerts. With this app, users can have a one-stop-shop for all their smart home needs. The app offers a convenient way to check the status of smart devices, including smart TVs, refrigerators, and more, all in one place. Additionally, the app provides reporting for up to 30 days, allowing users to track their smart device activity through a comprehensive report.
+            </p>
+            <h3 class="projects__row-content-title">Tools &amp; Technologies Used</h3>
+            <div class="skills__skill">
+              <img src="./assets/technicalskills/python.svg" title="Python">
+              <img src="./assets/technicalskills/figma.svg" title="Figma">
+              <img src="./assets/technicalskills/flutter.svg" title="Flutter">
+              <img src="./assets/technicalskills/dart.svg" title="Dart">
+              <img src="./assets/technicalskills/mysql.svg" title="MySQL">
+              <img src="./assets/technicalskills/jira.svg" title="Jira"> 
+              <img src="./assets/technicalskills/fastapi.svg" title="Fast Api">
+              <img src="./assets/technicalskills/visualstudiocode.svg" title="Visual Studio Code"> 
+            </div>
+            <a href="https://github.com/verma46/SDM_Frontend.git" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Repository Link</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/jpeg/realesateengine.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Real Estate Web Search Engine</h3>
+            <p class="projects__row-content-desc">
+              The Real Estate Web Search Engine project is a highly advanced and optimized search engine that helps users search for properties based on specific criteria. Utilizing various Java libraries, including Hash maps, Arraylist, JSoup library, Edit Distance algorithm, and Stream API, the project extracted data, performed spell check, and sorted search results. Users can input their desired location, number of bedrooms, and price range to get a comprehensive listing of matching properties. The Edit Distance algorithm implemented in the project helps achieve high accuracy levels by correcting spelling mistakes and typos in search queries.
+            </p>
+            <h3 class="projects__row-content-title">Tools &amp; Technologies Used</h3>
+            <div class="skills__skill">
+              <img src="./assets/technicalskills/java.svg" title="Java">
+              <img src="./assets/technicalskills/jsoup.png" title="Jsoup">
+              <img src="./assets/technicalskills/eclipse.svg" title="Eclipse">
+            </div>
+            <a href="https://github.com/verma46/Real_Estate_Web_Search_Engine.git" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Repository Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Section Ends -->
+
+  <!-- Contact Section starts -->
+
+  <section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Let's get in touch faster than a cheetah chasing its prey! Contact me now!
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action="https://formspree.io/f/xgebddbe" method="POST" class="contact__form">
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="name">Name</label>
+            <input required="" placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name">
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="email">Email</label>
+            <input required="" placeholder="Enter Your Email" type="email" class="contact__form-input" name="email" id="email">
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="message">Message</label>
+            <textarea required="" cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn--theme contact__btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section Ends -->
+
+  <!-- slideshow Section Starts -->
+
+  <section id="achievement" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">Achievements &amp; Activity Gallery</span>
+        <span class="heading-sec__sub">
+          Step right up and witness the highlights of my journey so far! From jaw-dropping achievements to unforgettable activities, this gallery is a snapshot of the best times of my life.
+        </span>
+      </h2>
+    </div>
+    <div class="slideshow">
+      <div class="wrapper">
+      <i id="left" class="fa fa-arrow-left"></i>
+      <div class="carousel">
+        <div class="text">Drag left or right</div>
+        <img src="./assets/jpeg/selected1.png" alt="img" draggable="false">
+        <img src="./assets/jpeg/selected2.jpg" alt="img" draggable="false">
+        <img src="./assets/jpeg/selected3.jpg" alt="img" draggable="false">
+        <img src="./assets/jpeg/selected4.jpg" alt="img" draggable="false">
+        <img src="./assets/jpeg/selected5.jpg" alt="img" draggable="false">
+        <img src="./assets/jpeg/selected6.jpeg" alt="img" draggable="false">
+        <img src="./assets/jpeg/selected7.jpeg" alt="img" draggable="false">
+        <img src="./assets/jpeg/selected8.jpeg" alt="img" draggable="false">
+        <img src="./assets/jpeg/selected9.png" alt="img" draggable="false">
+        <img src="./assets/jpeg/selected10.png" alt="img" draggable="false">
+        <img src="./assets/jpeg/selected11.png" alt="img" draggable="false">
+      </div>
+      <i id="right" class="fa fa-arrow-right"></i>
+     </div>
+    </div>
+  </section>
+
+  <!-- slideshow Section Ends -->
+
+  <!-- Footer Section starts -->
+
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span class="main-footer__short-desc">Follow me down the rabbit hole!</span>
+            <p class="main-footer__short-desc">👇🏻</p>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/tanmayverma199724/">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon">
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/verma46">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon">
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/tanmay199724">
+              <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="icon">
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://instagram.com/tanmay_verma24?igshid=YmMyMTA2M2Y=">
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon">
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">Tanmay Verma</h4>
+          <p class="main-footer__short-desc">
+            You made it to the end! That's commitment. Now go reward yourself with a cupcake (or two). 😉
+          </p>
+        </div>
+      </div>
+
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        © Copyright 2023. Made by
+        <a rel="noreferrer" target="_blank" href="./index.html#home-hero">Tanmay Verma</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Section Ends -->
+
+  <!-- If in app.component.html-->
+  <!-- <script src="/Users/tanmayverma/myportfolio/src/index.js"></script> -->
+  
+  <a href="./index.html#home-hero" class="float" id="floating-button">
+    <i class="fa fa-arrow-up my-float"></i>
+  </a>
+  
+
+  <a class="darkfloat">
+          <label for="checkbox" class="darkcheckbox-label" id="darkcheckbox">
+            <i class="fa fa-bolt" id="my-darkfloat"></i>
+          </label>
+  </a>
+
+  
+  
+<script src="runtime.8bb584f30a752d7c.js" type="module"></script><script src="polyfills.63f6dc5cd77dde95.js" type="module"></script><script src="scripts.7635338c20d01537.js" defer></script><script src="main.519036af44facb0a.js" type="module"></script>
+</body></html>

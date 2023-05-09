@@ -1,0 +1,118 @@
+ /* .glow {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+  }
+  
+  .glow:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .glow:hover:before {
+    border-color: #facf0f;
+    box-shadow: 0 0 10px #facf0f;
+  } */
+  
+  /* ----------------  */
+  .glow {
+    position: relative;
+    display: inline-block;
+    padding: 1px 2px;
+    border: 2px solid transparent;
+  }
+  
+  .glow:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .glow:hover:before {
+    border-color: #fb0000;
+    box-shadow: 0 0 15px #fb0000;
+    animation: glow 1s linear infinite;
+  }
+  
+  @keyframes glow {
+    0% {
+      border-color: #fb0000;
+    }
+    16.7% {
+      border-color: #ffffff;
+    }
+    50% {
+      border-color: #fb0000;
+    }
+    66.7% {
+      border-color: #ffffff;
+    }
+    100% {
+      border-color: #fb0000;
+    }
+  }
+  
+  /* ----------------  */
+
+  /* ----------------  */
+  .glowheader {
+    position: relative;
+    display: inline-block;
+    padding: 1px 1px;
+    border: 2px solid transparent;
+  }
+  
+  .glowheader:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .glowheader:hover:before {
+    border-color: #facf0f;
+    box-shadow: 0 0 10px #facf0f;
+    animation: glow 1s linear infinite;
+  }
+  
+  @keyframes glowheader {
+    0% {
+      border-color: #facf0f;
+    }
+    16.7% {
+      border-color: #ffffff;
+    }
+    50% {
+      border-color: #facf0f;
+    }
+    66.7% {
+      border-color: #ffffff;
+    }
+    100% {
+      border-color: #facf0f;
+    }
+  }
+
+  /* ----------------  */
