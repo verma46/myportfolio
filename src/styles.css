@@ -924,7 +924,7 @@ text-align: center;
     bottom:10px;
     /* right:30px; */
     left:30px;
-    background-color:linear-gradient(to right, rgba(250, 85, 15, 0.8), rgba(250, 207, 15, 0.8));
+    background-color:#fa980f;
     color:#FFF;
     border-radius:50px;
     text-align:center;
@@ -1217,7 +1217,7 @@ body.dark .fa-bolt {
     height:40px;
     bottom:10px;
     left:30px;
-    background-color: linear-gradient(to right, rgba(229, 79, 79, 0.8), rgba(6, 6, 6, 0.8));
+    background-color: #dd5252cc;
     border-radius:50px;
     text-align:center;
     box-shadow: 2px 2px 3px #999;
